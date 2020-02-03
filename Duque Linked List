@@ -1,0 +1,19 @@
+package Palindrome;
+
+import java.util.Deque;
+import java.util.LinkedList;
+/*the advantage of using deque is the fact you can edit collection from both ends*/
+public class DequeLinkedList {
+	public static void main(String[] args) {
+		Deque<String> list = new LinkedList<String>();
+
+		list.add("Mohammed");
+		list.add("Shafiq");
+		list.add("Fata");
+
+		list.removeLast();
+		list.removeFirst();
+
+		list.forEach(value -> System.out.println(value + " "));
+	}
+}
